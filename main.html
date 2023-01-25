@@ -1,0 +1,59 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>loveHeart</title>
+    <link rel="shortcut icon" href="images/心.png" type="image/x-icon">
+    <style>
+        html,
+        body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background: #e8e8e8;
+        }
+        canvas {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        p{
+            position: fixed;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #FF6699;
+            animation: k 3s ease-in-out infinite;
+        }
+        @keyframes k{
+            100%{
+                font-size: 24px;
+                opacity: 0;
+            }
+        }
+        audio {
+    width: 0;
+    height: 0;
+}
+    </style>
+</head>
+<body> 
+
+    <canvas id="pinkboard"></canvas>
+    <p><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;祝我的宝贝胡欣永远快快乐乐！<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;斯人若彩虹，遇上方知有<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的故事会一直一直写下去<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——宇</p>
+
+    <audio src="audios/ADG - 我 去 宇 宙 偷 星 星，放 在 夜 里 等 你♡.mp3" id="bgMusic" controls="controls" autoplay loop="true" hidden="true"></audio>
+
+    <script type ="text/javascript">
+
+    var mp3 = new Audio('audios/ADG - 我 去 宇 宙 偷 星 星，放 在 夜 里 等 你♡.mp3');  // 创建音频对象
+    mp3.play();  // 播放
+
+    </script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+    
+
+</body>
+
+</html>

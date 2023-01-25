@@ -1,9 +1,9 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>loveHeart</title>
+    <title>触摸跳动的♥</title>
     <link rel="shortcut icon" href="images/心.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <style>
         html,
         body {
@@ -34,20 +34,18 @@
     </style>
 </head>
 <body> 
-        <script>
+    <div class="spinner"><div></div></div>
+    <script>
         // 获取动画
         let loader = document.querySelector(".spinner");
         // 加载完成事件
-        window.loader = function () {
-            // 加载完成，隐藏动画，显示内容
-            loader.style.display = "none";
-        }
+    loader.addEventListener("click", function () {
+        console.log("目标元素被点击了");
+        document.location.href = 'main.html';
+})
+        
     </script>
-    <canvas id="pinkboard"></canvas>
-    <div class="loader"><div></div></div>
-    <p><br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;祝我的宝贝胡欣永远快快乐乐！<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;斯人若彩虹，遇上方知有<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们的故事会一直一直写下去<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——宇</p>
-
-    <script type="text/javascript" src="main.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
